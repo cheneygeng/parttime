@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parttime.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomArea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF" >
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/bottomArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         >
+         <ImageView
+            android:id="@+id/tabTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B6B6B6" />
+         <LinearLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabTop"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+            <FrameLayout
+                android:id="@+id/weixinLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/weixinImageView"
+                    android:layout_width="96px"
+                    android:layout_height="84px"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/ami" />
+
+                <TextView
+                    android:id="@+id/weixinTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weixin"
+                    android:textColor="#45C01A"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="13sp" />
+            </FrameLayout>
+
+            <!-- 联系人按钮 -->
+            <FrameLayout
+                android:id="@+id/contractLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/contractImageView"
+                    android:layout_width="96px"
+                    android:layout_height="84px"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/amg" />
+
+                <TextView
+                    android:id="@+id/contractTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contract"
+                    android:textColor="#999999"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="13sp" />
+            </FrameLayout>
+
+            <!-- 发现按钮 -->
+            <FrameLayout
+                android:id="@+id/findLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/findImageView"
+                    android:layout_width="96px"
+                    android:layout_height="84px"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/amo" />
+
+                <TextView
+                    android:id="@+id/findTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find"
+                    android:textColor="#999999"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="13sp" />
+            </FrameLayout>
+
+            <!-- 我按钮 -->
+            <FrameLayout
+                android:id="@+id/meLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/meImageView"
+                    android:layout_width="96px"
+                    android:layout_height="84px"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/ams" />
+
+                <TextView
+                    android:id="@+id/meTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me"
+                    android:textColor="#999999"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="13sp" />
+            </FrameLayout>
+         </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
