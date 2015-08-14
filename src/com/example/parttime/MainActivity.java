@@ -43,7 +43,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		// 初始化按钮单击事件
 		initClickEvent();
-
 		// 初始化所有fragment
 		initFragment();
 
