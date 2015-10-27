@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnClickListener {
 
-	// 定位四个Fragment
+	//定位四个Fragment
 	private Fragment findFragment = new FindFragment();
 	private Fragment meFragment = new MeFragment();
 	private Fragment contractFragment = new ContractFragment();
